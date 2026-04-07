@@ -8,10 +8,10 @@
   <img src="https://img.shields.io/badge/Static%20site-✓-2ea043?style=for-the-badge" alt="Static site" />
 </p>
 
-<h1 align="center">🗺️ AI Engineer Roadmap — 12-Week Plan</h1>
+<h1 align="center">🗺️ AI Engineer Roadmap - 12-Week Plan</h1>
 
 <p align="center">
-  A polished, static <strong>personal learning roadmap</strong>: daily topics, tasks, resources, and progress tracking — with <strong>task-level completion</strong>, <strong>day-level sync</strong>, and <strong>export / import</strong> for moving progress between devices.
+  A polished, static <strong>personal learning roadmap</strong>: daily topics, tasks, resources, and progress tracking with <strong>task-level completion</strong>, <strong>day-level sync</strong>, and <strong>export / import</strong> for moving progress between devices.
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 | 🔁 **Day ↔ tasks sync**      | All tasks done → day completes; day checked → all tasks complete     |
 | 📊 **Granular progress**     | Completion % with **two decimal places** (visible per-task impact)   |
 | 💾 **Local persistence**     | Progress saved in the browser (`localStorage`)                       |
-| 📤 **Export / Import**       | JSON to clipboard or file — sync across browsers / machines          |
+| 📤 **Export / Import**       | JSON to clipboard or file - sync across browsers / machines          |
 | 🔎 **Search & filters**      | Filter by track (Python, LLMs, MLOps, CV, etc.) and full-text search |
 | 🎨 **UI**                    | Dark theme, subtle grid/noise, responsive table layout               |
 
@@ -57,7 +57,7 @@ Then open `http://localhost:8080`.
 
 ### Deploy
 
-Push to **GitHub Pages**, **Netlify**, **Vercel**, **Cloudflare Pages**, or any static host — **no build step**.
+Push to **GitHub Pages**, **Netlify**, **Vercel**, **Cloudflare Pages**, or any static host - **no build step**.
 
 > **Live demo:** add your public URL here once hosted:  
 > `https://your-demo-url.example`
@@ -73,11 +73,11 @@ Stored per **origin** (site URL) under:
 
 ### 📤 Export
 
-Toolbar → **Export** — copies JSON (or downloads `ai-roadmap-progress.json` if clipboard isn’t available).
+Toolbar → **Export** → copies JSON (or downloads `ai-roadmap-progress.json` if clipboard isn’t available).
 
 ### 📥 Import
 
-Toolbar → **Import** — paste JSON → **Apply import** (replaces progress in the current browser).
+Toolbar → **Import** → paste JSON → **Apply import** (replaces progress in the current browser).
 
 ---
 
@@ -102,10 +102,10 @@ ai-engineer-roadmap/
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see [`LICENSE`](https://github.com/iamayuu/ai-engineer-roadmap/blob/main/LICENSE).
+This project is licensed under the **MIT License** - see [`LICENSE`](https://github.com/iamayuu/ai-engineer-roadmap/blob/main/LICENSE).
 
 ---
 
 <p align="center">
-  Built for focus — track daily, ship weekly. 🚀
+  Built for focus - track daily, ship weekly. 🚀
 </p>
