@@ -46,3 +46,66 @@
 git clone https://github.com/iamayuu/ai-engineer-roadmap.git
 cd ai-engineer-roadmap
 ```
+
+### Run locally
+
+Open `index.html` in a browser, or serve the folder (recommended):
+
+    python -m http.server 8080
+
+Then open `http://localhost:8080`.
+
+### Deploy
+
+Push to **GitHub Pages**, **Netlify**, **Vercel**, **Cloudflare Pages**, or any static host — **no build step**.
+
+> **Live demo:** add your public URL here once hosted:  
+> `https://your-demo-url.example`
+
+---
+
+## 💾 Progress & backup
+
+Stored per **origin** (site URL) under:
+
+- **Storage key:** `ai-roadmap-done-v2`
+- **Task keys:** `"<dayNumber>:<taskIndex>"` (e.g. `"12:2"`)
+
+### 📤 Export
+
+Toolbar → **Export** — copies JSON (or downloads `ai-roadmap-progress.json` if clipboard isn’t available).
+
+### 📥 Import
+
+Toolbar → **Import** — paste JSON → **Apply import** (replaces progress in the current browser).
+
+---
+
+## 🧱 Project structure
+
+```
+ai-engineer-roadmap/
+├── index.html    # Layout & shell
+├── style.css     # Theme, table, dialogs, responsive styles
+├── app.js        # UI, progress, filters, export/import
+└── data.js       # Roadmap content (phases, days, tasks, links)
+```
+
+---
+
+## 🛠️ Stack
+
+- Vanilla **HTML / CSS / JavaScript**
+- **Google Fonts** (e.g. Inter, Space Grotesk, JetBrains Mono, Syne)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see [`LICENSE`](https://github.com/iamayuu/ai-engineer-roadmap/blob/main/LICENSE).
+
+---
+
+<p align="center">
+  Built for focus — track daily, ship weekly. 🚀
+</p>
