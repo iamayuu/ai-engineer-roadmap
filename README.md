@@ -17,8 +17,7 @@
 <p align="center">
   <a href="https://github.com/iamayuu/ai-engineer-roadmap"><strong>Repository</strong></a>
   &nbsp;·&nbsp;
-  <!-- TODO: replace # with your hosted demo URL -->
-  <a href="#"><strong>Live demo</strong> (coming soon)</a>
+  <a href="https://personal-ai-engineer-roadmap.netlify.app"><strong>Live demo</strong></a>
 </p>
 
 ---
@@ -59,8 +58,8 @@ Then open `http://localhost:8080`.
 
 Push to **GitHub Pages**, **Netlify**, **Vercel**, **Cloudflare Pages**, or any static host - **no build step**.
 
-> **Live demo:** add your public URL here once hosted:  
-> `https://your-demo-url.example`
+> **Live demo:** 
+> `https://personal-ai-engineer-roadmap.netlify.app`
 
 ---
 
