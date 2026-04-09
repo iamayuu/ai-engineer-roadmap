@@ -16,7 +16,18 @@ const ROADMAP = [
         ]
       },
       {
-        n: 2, topic: "Neural Networks Intuition", tags: ["dl"], hrs: "2",
+        n: 2, topic: "ML Fundamentals (5 Paradigms)", tags: ["ml"], hrs: "2",
+        tasks: [
+          "Understand the 5 primary ML aspects: supervised, unsupervised, reinforcement learning, generative AI, and agentic AI — write 1 example for each in your own words",
+          "Watch 'Machine Learning for Everybody' and capture: (1) what labels are, (2) train/val/test split, (3) overfitting intuition",
+          "Write a 10-line cheat sheet: when you'd use supervised vs unsupervised vs RL"
+        ],
+        links: [
+          { t: "Machine Learning for Everybody — Full Course", u: "https://www.youtube.com/watch?v=i_LwzRVP7bg" }
+        ]
+      },
+      {
+        n: 3, topic: "Neural Networks Intuition", tags: ["dl"], hrs: "2",
         tasks: [
           "Watch 3Blue1Brown Neural Nets episodes 1–2 with pen & paper — draw your own neuron",
           "Understand weights, biases, and activation functions at a conceptual level",
@@ -28,7 +39,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 3, topic: "Python: OOP + File I/O", tags: ["python"], hrs: "2.5",
+        n: 4, topic: "Python: OOP + File I/O", tags: ["python"], hrs: "2.5",
         tasks: [
           "Study classes, __init__, methods, and inheritance with a real example",
           "Read and write CSV and JSON files using Python's built-in modules",
@@ -40,7 +51,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 4, topic: "Math for ML: Linear Algebra", tags: ["dl"], hrs: "2.5",
+        n: 5, topic: "Math for ML: Linear Algebra", tags: ["dl"], hrs: "2.5",
         tasks: [
           "Watch 3Blue1Brown Essence of Linear Algebra chapters 1–4 (vectors, matrices)",
           "Understand dot products and matrix multiplication — work through examples by hand",
@@ -52,7 +63,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 5, topic: "Python Data Stack: NumPy + Pandas", tags: ["python"], hrs: "3",
+        n: 6, topic: "Python Data Stack: NumPy + Pandas", tags: ["python"], hrs: "3",
         tasks: [
           "Learn NumPy array creation, slicing, broadcasting, and vectorized operations",
           "Master Pandas DataFrames: read CSV, filter rows, groupby, handle missing values",
@@ -64,7 +75,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 6, topic: "Week 1 Project + Revision", tags: ["python", "project", "revision"], hrs: "3",
+        n: 7, topic: "Week 1 Project + Revision", tags: ["python", "project", "revision"], hrs: "3",
         tasks: [
           "Pick any public dataset (movies, weather, sports) and clean it fully with Pandas",
           "Create 5 meaningful visualizations using Matplotlib or Seaborn with proper titles",
@@ -76,7 +87,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 7, topic: "Rest Day — Light Reading", tags: ["revision"], hrs: "1",
+        n: 8, topic: "Rest Day — Light Reading", tags: ["revision"], hrs: "1",
         tasks: [
           "Browse 5 AI Engineer job postings on LinkedIn and note required skills",
           "Watch Andrej Karpathy's 'State of GPT' talk (no coding required)",
@@ -87,7 +98,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 8, topic: "Python: Decorators + Generators", tags: ["python"], hrs: "2.5",
+        n: 9, topic: "Python: Decorators + Generators", tags: ["python"], hrs: "2.5",
         tasks: [
           "Learn the @decorator pattern — build a @timer decorator that logs function runtime",
           "Understand generators and yield — build a streaming file reader with a generator",
@@ -99,7 +110,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 9, topic: "Backpropagation + Calculus Intuition", tags: ["dl"], hrs: "2.5",
+        n: 10, topic: "Backpropagation + Calculus Intuition", tags: ["dl"], hrs: "2.5",
         tasks: [
           "Watch 3Blue1Brown backprop episodes 3–4 — understand the chain rule visually",
           "Implement a Value class that tracks gradients manually (micrograd-style)",
@@ -111,7 +122,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 10, topic: "Python: APIs + Web Scraping", tags: ["python"], hrs: "2.5",
+        n: 11, topic: "Python: APIs + Web Scraping", tags: ["python"], hrs: "2.5",
         tasks: [
           "Use the requests library to call a public REST API (e.g. OpenWeather or NewsAPI)",
           "Parse JSON responses and store results in a Pandas DataFrame",
@@ -123,7 +134,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 11, topic: "Intro to PyTorch", tags: ["dl"], hrs: "3",
+        n: 12, topic: "Intro to PyTorch", tags: ["dl"], hrs: "3",
         tasks: [
           "Install PyTorch, create tensors, perform basic ops, and check GPU availability",
           "Understand autograd — run a simple backward pass and inspect .grad values",
@@ -135,7 +146,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 12, topic: "System Design Fundamentals", tags: ["sysdesign"], hrs: "2",
+        n: 13, topic: "System Design Fundamentals", tags: ["sysdesign"], hrs: "2",
         tasks: [
           "Learn what APIs, CDNs, load balancers, and databases do at a high level",
           "Read the System Design Primer intro — understand horizontal vs vertical scaling",
@@ -147,7 +158,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 13, topic: "Build: Micrograd Clone", tags: ["dl", "project"], hrs: "3",
+        n: 14, topic: "Build: Micrograd Clone", tags: ["dl", "project"], hrs: "3",
         tasks: [
           "Implement the full Value class with add, mul, pow, relu operations from scratch",
           "Add backward() with correct chain rule for each operation",
@@ -159,7 +170,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 14, topic: "Week 2 Revision + Quiz", tags: ["revision"], hrs: "2",
+        n: 15, topic: "Week 2 Revision + Quiz", tags: ["revision"], hrs: "2",
         tasks: [
           "Create Anki flashcards for: Python decorators, gradient descent, PyTorch autograd",
           "Re-explain backpropagation in writing without looking at notes — check your gaps",
@@ -177,7 +188,7 @@ const ROADMAP = [
     phaseColor: "#a78bfa",
     days: [
       {
-        n: 15, topic: "Neural Net in PyTorch (MNIST)", tags: ["dl"], hrs: "3",
+        n: 16, topic: "Neural Net in PyTorch (MNIST)", tags: ["dl"], hrs: "3",
         tasks: [
           "Build a fully-connected neural net with nn.Module on the MNIST dataset",
           "Add a training loop with loss tracking — plot train vs validation accuracy",
@@ -189,7 +200,19 @@ const ROADMAP = [
         ]
       },
       {
-        n: 16, topic: "Transformer Architecture", tags: ["llm"], hrs: "2.5",
+        n: 17, topic: "GenAI Basics: LLMs + Tokens", tags: ["llm"], hrs: "2.5",
+        tasks: [
+          "Understand what an LLM is: next-token prediction (tokens ≠ words) — estimate token counts for 5 example prompts you might send to an API",
+          "Learn tokenization basics and why tokens affect cost + context window (resource overlaps with other LLM intros; pick one and move on)",
+          "Map 4 ways to improve LLM performance: prompting, RAG, fine-tuning, pre-training — write 1 sentence on when you'd choose each"
+        ],
+        links: [
+          { t: "Deep Dive into LLMs like ChatGPT — Karpathy (tokenization + training)", u: "https://www.youtube.com/watch?v=7xTGNNLPyMI" },
+          { t: "Tokens explained (short)", u: "https://www.youtube.com/watch?v=nKSk_TiR8YA" }
+        ]
+      },
+      {
+        n: 18, topic: "Transformer Architecture", tags: ["llm"], hrs: "2.5",
         tasks: [
           "Read 'The Illustrated Transformer' end-to-end with a notebook open to test ideas",
           "Understand self-attention: Q, K, V matrices — compute attention scores manually for 3 tokens",
@@ -201,7 +224,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 17, topic: "Python: Async + Multithreading", tags: ["python"], hrs: "2",
+        n: 19, topic: "Python: Async + Multithreading", tags: ["python"], hrs: "2",
         tasks: [
           "Learn asyncio basics: async/await, event loop, coroutines",
           "Build an async API fetcher that hits 10 URLs concurrently",
@@ -213,7 +236,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 18, topic: "CNNs + Computer Vision Basics", tags: ["cv", "dl"], hrs: "3",
+        n: 20, topic: "CNNs + Computer Vision Basics", tags: ["cv", "dl"], hrs: "3",
         tasks: [
           "Understand convolution, filters, padding, stride, and pooling layers conceptually",
           "Build a CNN from scratch with PyTorch and train on CIFAR-10",
@@ -225,7 +248,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 19, topic: "HuggingFace Transformers Intro", tags: ["llm"], hrs: "2.5",
+        n: 21, topic: "HuggingFace Transformers Intro", tags: ["llm"], hrs: "2.5",
         tasks: [
           "Install transformers library, load a BERT model, and run sentiment analysis in <10 lines",
           "Explore the HuggingFace Hub — find 5 models for different tasks and note their architectures",
@@ -237,7 +260,18 @@ const ROADMAP = [
         ]
       },
       {
-        n: 20, topic: "System Design: Databases + Caching", tags: ["sysdesign"], hrs: "2",
+        n: 22, topic: "Project: Text Summarizer", tags: ["llm", "project"], hrs: "3",
+        tasks: [
+          "Build a text summarizer using a pretrained summarization model — test on 3 long articles and compare outputs",
+          "Add controls for summary length (min/max) and measure latency for short vs long inputs",
+          "Write a short README section: limitations (hallucinations, long-context truncation) and how you’d mitigate them with better prompting or RAG"
+        ],
+        links: [
+          { t: "Repo: Text Summarizer Project (reference implementation)", u: "https://github.com/praj2408/Text-Summarizer-Project" }
+        ]
+      },
+      {
+        n: 23, topic: "System Design: Databases + Caching", tags: ["sysdesign"], hrs: "2",
         tasks: [
           "Learn SQL vs NoSQL trade-offs, indexing, and when to use each",
           "Understand Redis: key-value store, TTL, caching patterns",
@@ -249,7 +283,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 21, topic: "Rest Day — Video Learning", tags: ["revision"], hrs: "1.5",
+        n: 24, topic: "Rest Day — Video Learning", tags: ["revision"], hrs: "1.5",
         tasks: [
           "Watch Andrew Ng's Week 1 Deep Learning lecture from Coursera (free to audit)",
           "Take structured notes using the Cornell method",
@@ -260,7 +294,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 22, topic: "Training Dynamics + Hyperparameters", tags: ["dl", "mlops"], hrs: "2.5",
+        n: 25, topic: "Training Dynamics + Hyperparameters", tags: ["dl", "mlops"], hrs: "2.5",
         tasks: [
           "Experiment with learning rate schedules on your MNIST model — log results",
           "Set up Weights & Biases for experiment tracking on any existing project",
@@ -272,7 +306,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 23, topic: "OpenAI / Anthropic API — First Calls", tags: ["llm", "python"], hrs: "2.5",
+        n: 26, topic: "OpenAI / Anthropic API — First Calls", tags: ["llm", "python"], hrs: "2.5",
         tasks: [
           "Get an Anthropic API key and make your first claude-3 chat completion call",
           "Implement a system prompt and experiment with temperature + max_tokens",
@@ -284,7 +318,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 24, topic: "Docker Basics", tags: ["mlops"], hrs: "3",
+        n: 27, topic: "Docker Basics", tags: ["mlops"], hrs: "3",
         tasks: [
           "Understand Docker: images, containers, volumes, and the Dockerfile syntax",
           "Build a FastAPI hello-world app and write a Dockerfile to containerize it",
@@ -296,7 +330,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 25, topic: "Transfer Learning", tags: ["dl", "cv"], hrs: "3",
+        n: 28, topic: "Transfer Learning", tags: ["dl", "cv"], hrs: "3",
         tasks: [
           "Understand why pretrained weights accelerate training — study ImageNet features",
           "Fine-tune ResNet-18 on a 5-class custom dataset (use Kaggle or your own photos)",
@@ -308,7 +342,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 26, topic: "LangChain / LlamaIndex Basics", tags: ["llm"], hrs: "3",
+        n: 29, topic: "LangChain / LlamaIndex Basics", tags: ["llm"], hrs: "3",
         tasks: [
           "Install LangChain and build your first chain: prompt template → LLM → output parser",
           "Add memory to a conversational chain so it remembers previous turns",
@@ -320,11 +354,11 @@ const ROADMAP = [
         ]
       },
       {
-        n: 27, topic: "Mini-Project: Sentiment Analyzer API", tags: ["llm", "mlops", "project"], hrs: "3",
+        n: 30, topic: "Mini-Project: Sentiment Analyzer API", tags: ["llm", "mlops", "project"], hrs: "3",
         tasks: [
           "Fine-tune a DistilBERT model on an Amazon reviews dataset for sentiment classification",
           "Wrap the model in a FastAPI endpoint with proper request/response schemas",
-          "Dockerize the API and push the repo to GitHub with a detailed README"
+          "Dockerize the API and push the repo to GitHub with a detailed README (overlaps with Day 43 fine-tuning; this one is a smaller, practical classifier-first project)"
         ],
         links: [
           { t: "HuggingFace Fine-Tuning Guide", u: "https://huggingface.co/learn/nlp-course/chapter3/1" },
@@ -332,7 +366,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 28, topic: "Week 4 Revision", tags: ["revision"], hrs: "2",
+        n: 31, topic: "Week 4 Revision", tags: ["revision"], hrs: "2",
         tasks: [
           "Review transformers, CNNs, Docker, and the HuggingFace pipeline abstraction",
           "Write a 1-page cheat sheet on: self-attention in your own words",
@@ -350,19 +384,20 @@ const ROADMAP = [
     phaseColor: "#2dd4bf",
     days: [
       {
-        n: 29, topic: "Advanced RAG", tags: ["llm"], hrs: "3",
+        n: 32, topic: "Advanced RAG", tags: ["llm"], hrs: "3",
         tasks: [
           "Learn chunking strategies: fixed-size, sentence-based, semantic — compare retrieval quality",
           "Set up a FAISS or ChromaDB vector store and embed your documents",
-          "Build a multi-document RAG system with source attribution in every answer"
+          "Build a multi-document RAG system with source attribution in every answer (overlaps with Day 40 RAG app — Day 29 focuses on retrieval quality + chunking experiments)"
         ],
         links: [
           { t: "LangChain RAG Tutorial", u: "https://python.langchain.com/docs/use_cases/question_answering/" },
-          { t: "FAISS Docs", u: "https://faiss.ai/" }
+          { t: "FAISS Docs", u: "https://faiss.ai/" },
+          { t: "RAG explained (video)", u: "https://www.youtube.com/watch?v=qSvlGGDJ2WM" }
         ]
       },
       {
-        n: 30, topic: "MLflow Experiment Tracking", tags: ["mlops"], hrs: "2.5",
+        n: 33, topic: "MLflow Experiment Tracking", tags: ["mlops"], hrs: "2.5",
         tasks: [
           "Install MLflow and log params, metrics, and model artifacts in a training run",
           "Set up a local MLflow tracking server and explore the UI",
@@ -374,7 +409,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 31, topic: "Object Detection (YOLO)", tags: ["cv"], hrs: "3",
+        n: 34, topic: "Object Detection (YOLO)", tags: ["cv"], hrs: "3",
         tasks: [
           "Understand the YOLO architecture: grid cells, anchor boxes, IoU, NMS",
           "Run YOLOv8 on a sample image and then on a webcam stream",
@@ -386,7 +421,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 32, topic: "System Design: Message Queues", tags: ["sysdesign"], hrs: "2",
+        n: 35, topic: "System Design: Message Queues", tags: ["sysdesign"], hrs: "2",
         tasks: [
           "Understand Kafka concepts: topics, partitions, producers, consumers, consumer groups",
           "Learn pub/sub vs queue patterns and when each is appropriate",
@@ -398,19 +433,20 @@ const ROADMAP = [
         ]
       },
       {
-        n: 33, topic: "Prompt Engineering Deep Dive", tags: ["llm"], hrs: "2.5",
+        n: 36, topic: "Prompt Engineering Deep Dive", tags: ["llm"], hrs: "2.5",
         tasks: [
           "Study and implement: zero-shot, few-shot, and chain-of-thought prompting techniques",
           "Experiment with XML-structured prompts in Claude and observe output quality differences",
-          "Build a prompt testing harness that runs 5 variants and scores outputs automatically"
+          "Build a prompt testing harness that runs 5 variants and scores outputs automatically (if you already covered prompting basics on Day 16, skip straight to the harness)"
         ],
         links: [
           { t: "Anthropic Prompt Engineering Guide", u: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" },
-          { t: "OpenAI Prompt Engineering", u: "https://platform.openai.com/docs/guides/prompt-engineering" }
+          { t: "OpenAI Prompt Engineering", u: "https://platform.openai.com/docs/guides/prompt-engineering" },
+          { t: "Prompt Engineering Tutorial (YouTube)", u: "https://www.youtube.com/watch?v=_ZvnD73m40o" }
         ]
       },
       {
-        n: 34, topic: "Python: Testing + Code Quality", tags: ["python", "mlops"], hrs: "2.5",
+        n: 37, topic: "Python: Testing + Code Quality", tags: ["python", "mlops"], hrs: "2.5",
         tasks: [
           "Write pytest unit tests for your sentiment API — cover happy path and edge cases",
           "Add mypy type checking to a Python file and fix all type errors",
@@ -422,7 +458,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 35, topic: "Rest Day", tags: ["revision"], hrs: "1",
+        n: 38, topic: "Rest Day", tags: ["revision"], hrs: "1",
         tasks: [
           "Read one paper abstract from Papers With Code trending — summarize it in 5 bullets",
           "Journal: what projects are you most proud of? What's the biggest gap?",
@@ -433,7 +469,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 36, topic: "Kubernetes Basics", tags: ["mlops"], hrs: "3",
+        n: 39, topic: "Kubernetes Basics", tags: ["mlops"], hrs: "3",
         tasks: [
           "Install minikube and kubectl — understand Pods, Deployments, and Services",
           "Write a Kubernetes Deployment YAML for your FastAPI sentiment API",
@@ -445,7 +481,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 37, topic: "Multimodal AI: CLIP", tags: ["cv", "llm"], hrs: "2.5",
+        n: 40, topic: "Multimodal AI: CLIP", tags: ["cv", "llm"], hrs: "2.5",
         tasks: [
           "Understand how CLIP jointly trains vision and language encoders with contrastive loss",
           "Run CLIP zero-shot image classification on 10 images from your own phone",
@@ -457,7 +493,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 38, topic: "A/B Testing for ML Models", tags: ["mlops", "sysdesign"], hrs: "2",
+        n: 41, topic: "A/B Testing for ML Models", tags: ["mlops", "sysdesign"], hrs: "2",
         tasks: [
           "Learn statistical significance, p-values, and power in the context of ML metrics",
           "Study canary releases, shadow mode, and traffic splitting patterns",
@@ -469,7 +505,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 39, topic: "Image Segmentation", tags: ["cv"], hrs: "2.5",
+        n: 42, topic: "Image Segmentation", tags: ["cv"], hrs: "2.5",
         tasks: [
           "Understand semantic vs instance vs panoptic segmentation and when to use each",
           "Run Meta's Segment Anything Model (SAM) on a custom image with point prompts",
@@ -481,19 +517,20 @@ const ROADMAP = [
         ]
       },
       {
-        n: 40, topic: "Project: RAG Chatbot App", tags: ["llm", "project"], hrs: "3",
+        n: 43, topic: "Project: RAG Chatbot App", tags: ["llm", "project"], hrs: "3",
         tasks: [
           "Build a RAG pipeline over 5+ PDFs with FAISS and LangChain",
           "Add a Streamlit UI with a chat interface, source display, and clear button",
-          "Test with adversarial questions and add a fallback for out-of-context queries"
+          "Test with adversarial questions and add a fallback for out-of-context queries (this overlaps with other 'local RAG' builds — pick one repo as your base and use the other as a reference)"
         ],
         links: [
           { t: "Streamlit Docs", u: "https://docs.streamlit.io/" },
-          { t: "Gradio Quickstart", u: "https://www.gradio.app/guides/quickstart" }
+          { t: "Gradio Quickstart", u: "https://www.gradio.app/guides/quickstart" },
+          { t: "Repo: simple-local-rag (reference)", u: "https://github.com/mrdbourke/simple-local-rag" }
         ]
       },
       {
-        n: 41, topic: "Cloud ML: AWS SageMaker Intro", tags: ["mlops"], hrs: "3",
+        n: 44, topic: "Cloud ML: AWS SageMaker Intro", tags: ["mlops"], hrs: "3",
         tasks: [
           "Set up an AWS free-tier account and explore SageMaker Studio",
           "Run a SageMaker training job for your sentiment model with an S3 data source",
@@ -505,7 +542,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 42, topic: "Week 6 Revision + Portfolio Update", tags: ["revision", "project"], hrs: "2.5",
+        n: 45, topic: "Week 6 Revision + Portfolio Update", tags: ["revision", "project"], hrs: "2.5",
         tasks: [
           "Draw architecture diagrams for all projects and add them to GitHub READMEs",
           "Write a 300-word blog post about your RAG chatbot on Dev.to or Hashnode",
@@ -523,19 +560,20 @@ const ROADMAP = [
     phaseColor: "#fb923c",
     days: [
       {
-        n: 43, topic: "Fine-Tuning LLMs (LoRA / QLoRA)", tags: ["llm"], hrs: "3",
+        n: 46, topic: "Fine-Tuning LLMs (LoRA / QLoRA)", tags: ["llm"], hrs: "3",
         tasks: [
           "Understand LoRA: low-rank decomposition, rank parameter, and why it's memory-efficient",
           "Fine-tune Mistral-7B or LLaMA-3 on a custom Q&A dataset using QLoRA + PEFT library",
-          "Evaluate the fine-tuned model on a held-out test set and compare to the base model"
+          "Evaluate the fine-tuned model on a held-out test set and compare to the base model (contrast with RAG + prompting; pre-training is typically out of scope for individuals)"
         ],
         links: [
           { t: "HuggingFace PEFT Library", u: "https://huggingface.co/docs/peft" },
-          { t: "QLoRA Paper Explained", u: "https://arxiv.org/abs/2305.14314" }
+          { t: "QLoRA Paper Explained", u: "https://arxiv.org/abs/2305.14314" },
+          { t: "QLoRA paper explained (video)", u: "https://www.youtube.com/watch?v=6l8GZDPbFn8" }
         ]
       },
       {
-        n: 44, topic: "ML Monitoring in Production", tags: ["mlops"], hrs: "2.5",
+        n: 47, topic: "ML Monitoring in Production", tags: ["mlops"], hrs: "2.5",
         tasks: [
           "Learn about data drift, concept drift, and model degradation patterns",
           "Set up Evidently AI to generate a data drift report on your sentiment model",
@@ -547,7 +585,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 45, topic: "Advanced CV: Face Detection + AR", tags: ["cv"], hrs: "2.5",
+        n: 48, topic: "Advanced CV: Face Detection + AR", tags: ["cv"], hrs: "2.5",
         tasks: [
           "Use MediaPipe Face Mesh to detect 468 facial landmarks in real-time",
           "Apply a simple AR filter: draw glasses or a hat aligned to the detected face",
@@ -559,7 +597,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 46, topic: "System Design: ML at Scale", tags: ["sysdesign"], hrs: "2",
+        n: 49, topic: "System Design: ML at Scale", tags: ["sysdesign"], hrs: "2",
         tasks: [
           "Design the multi-stage recommendation funnel: 1M → 10K → 500 → 50 results",
           "Understand candidate generation, ranking, and filtering stages with real examples",
@@ -571,7 +609,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 47, topic: "Vector Databases Deep Dive", tags: ["llm", "sysdesign"], hrs: "3",
+        n: 50, topic: "Vector Databases Deep Dive", tags: ["llm", "sysdesign"], hrs: "3",
         tasks: [
           "Understand HNSW indexing, ANN search, and filtering in vector databases",
           "Compare Pinecone vs Qdrant vs Weaviate on latency, cost, and filtering support",
@@ -583,7 +621,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 48, topic: "Python Performance: Profiling", tags: ["python"], hrs: "2.5",
+        n: 51, topic: "Python Performance: Profiling", tags: ["python"], hrs: "2.5",
         tasks: [
           "Profile your RAG pipeline using cProfile and line_profiler — find the bottlenecks",
           "Optimize the top 2 slowest functions using vectorization or algorithmic changes",
@@ -595,7 +633,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 49, topic: "Rest + Portfolio Review", tags: ["revision"], hrs: "1",
+        n: 52, topic: "Rest + Portfolio Review", tags: ["revision"], hrs: "1",
         tasks: [
           "Post your best project in r/MachineLearning or Twitter/X and ask for feedback",
           "Review 3 open-source ML repos on GitHub — note what good READMEs look like",
@@ -607,7 +645,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 50, topic: "LLM Agents + Tool Use", tags: ["llm"], hrs: "3",
+        n: 53, topic: "LLM Agents + Tool Use", tags: ["llm"], hrs: "3",
         tasks: [
           "Understand the ReAct framework: Reason → Act → Observe loop for agents",
           "Build a tool-using agent with Anthropic's tool_use API that can search and calculate",
@@ -619,7 +657,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 51, topic: "Data Versioning (DVC)", tags: ["mlops"], hrs: "2",
+        n: 54, topic: "Data Versioning (DVC)", tags: ["mlops"], hrs: "2",
         tasks: [
           "Initialize DVC in a project repo and track a dataset stored in S3 or Google Drive",
           "Create a DVC pipeline with stages: raw → processed → trained → evaluated",
@@ -631,7 +669,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 52, topic: "Real-Time Inference Optimization", tags: ["dl", "mlops"], hrs: "3",
+        n: 55, topic: "Real-Time Inference Optimization", tags: ["dl", "mlops"], hrs: "3",
         tasks: [
           "Export your sentiment model to ONNX format and benchmark it vs PyTorch",
           "Apply dynamic quantization (INT8) and measure accuracy vs latency trade-off",
@@ -643,7 +681,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 53, topic: "Multimodal Project: Image Captioning", tags: ["cv", "llm", "project"], hrs: "3",
+        n: 56, topic: "Multimodal Project: Image Captioning", tags: ["cv", "llm", "project"], hrs: "3",
         tasks: [
           "Load BLIP-2 from HuggingFace and generate captions for 20 test images",
           "Build a Gradio app with image upload, caption output, and confidence score",
@@ -655,7 +693,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 54, topic: "MLOps: CI/CD for ML", tags: ["mlops"], hrs: "2.5",
+        n: 57, topic: "MLOps: CI/CD for ML", tags: ["mlops"], hrs: "2.5",
         tasks: [
           "Set up a GitHub Actions workflow: lint → type check → unit tests on every PR",
           "Add a model evaluation gate: fail the CI if accuracy drops below threshold",
@@ -667,7 +705,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 55, topic: "Security in ML Systems", tags: ["llm", "sysdesign"], hrs: "2",
+        n: 58, topic: "Security in ML Systems", tags: ["llm", "sysdesign"], hrs: "2",
         tasks: [
           "Study the OWASP LLM Top 10: prompt injection, data leakage, insecure output handling",
           "Test your chatbot for prompt injection — try 5 attack patterns and document results",
@@ -679,7 +717,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 56, topic: "Week 8 Revision + Mock Interview", tags: ["revision", "sysdesign"], hrs: "2.5",
+        n: 59, topic: "Week 8 Revision + Mock Interview", tags: ["revision", "sysdesign"], hrs: "2.5",
         tasks: [
           "Do a 45-minute mock ML system design interview on Pramp or with a friend",
           "Practice explaining fine-tuning, RAG, and model monitoring out loud",
@@ -697,7 +735,7 @@ const ROADMAP = [
     phaseColor: "#f59e0b",
     days: [
       {
-        n: 57, topic: "Major Project Kickoff: Plan", tags: ["project"], hrs: "2",
+        n: 60, topic: "Major Project Kickoff: Plan", tags: ["project"], hrs: "2",
         tasks: [
           "Choose a portfolio-worthy project: recommender system, NLP pipeline, or CV app",
           "Write a 1-page spec: problem, dataset, model approach, success metrics, tech stack",
@@ -709,7 +747,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 58, topic: "Stanford CS224N: Attention Revisited", tags: ["llm"], hrs: "2.5",
+        n: 61, topic: "Stanford CS224N: Attention Revisited", tags: ["llm"], hrs: "2.5",
         tasks: [
           "Watch the Stanford CS224N lecture on attention and BERT — take structured notes",
           "Implement scaled dot-product attention from scratch in PyTorch (no nn.MultiheadAttention)",
@@ -720,7 +758,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 59, topic: "Project: Data Collection + EDA", tags: ["project", "python"], hrs: "3",
+        n: 62, topic: "Project: Data Collection + EDA", tags: ["project", "python"], hrs: "3",
         tasks: [
           "Download or collect your dataset — document its source, size, and license",
           "Run full EDA: distributions, correlations, class balance, sample inspection",
@@ -732,7 +770,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 60, topic: "GCP / Azure ML Intro", tags: ["mlops"], hrs: "2.5",
+        n: 63, topic: "GCP / Azure ML Intro", tags: ["mlops"], hrs: "2.5",
         tasks: [
           "Create a GCP or Azure free account and navigate the ML workspace",
           "Deploy a model to GCP Vertex AI Endpoints or Azure ML Endpoints",
@@ -744,7 +782,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 61, topic: "Project: Feature Engineering", tags: ["project", "dl"], hrs: "3",
+        n: 64, topic: "Project: Feature Engineering", tags: ["project", "dl"], hrs: "3",
         tasks: [
           "Build a feature pipeline: raw data → cleaned → encoded → normalized → ready",
           "Add at least 3 engineered features (interactions, embeddings, or domain-specific)",
@@ -756,7 +794,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 62, topic: "LLM Evaluation Frameworks", tags: ["llm", "mlops"], hrs: "2.5",
+        n: 65, topic: "LLM Evaluation Frameworks", tags: ["llm", "mlops"], hrs: "2.5",
         tasks: [
           "Understand BLEU, ROUGE, and perplexity — compute them on a text generation task",
           "Set up ragas to evaluate your RAG chatbot: faithfulness, answer relevancy, context recall",
@@ -768,7 +806,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 63, topic: "Rest Day", tags: ["revision"], hrs: "1",
+        n: 66, topic: "Rest Day", tags: ["revision"], hrs: "1",
         tasks: [
           "Read a chapter from 'Designing Machine Learning Systems' by Chip Huyen",
           "Browse Chip Huyen's blog and find one article that changes how you think about ML",
@@ -779,7 +817,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 64, topic: "Project: Model Training", tags: ["project", "dl"], hrs: "3",
+        n: 67, topic: "Project: Model Training", tags: ["project", "dl"], hrs: "3",
         tasks: [
           "Train your project's core model — log all experiments to W&B",
           "Run at least 5 hyperparameter combinations with Optuna or manual grid search",
@@ -791,7 +829,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 65, topic: "Advanced Python: Pydantic + Typing", tags: ["python"], hrs: "2.5",
+        n: 68, topic: "Advanced Python: Pydantic + Typing", tags: ["python"], hrs: "2.5",
         tasks: [
           "Refactor your project's data models using Pydantic v2 with full type annotations",
           "Add Protocol classes and TypedDict to improve structural typing",
@@ -803,7 +841,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 66, topic: "Project: API + UI Layer", tags: ["project", "mlops"], hrs: "3",
+        n: 69, topic: "Project: API + UI Layer", tags: ["project", "mlops"], hrs: "3",
         tasks: [
           "Wrap your trained model in a FastAPI app with proper input validation",
           "Build a Streamlit or Gradio frontend with at least 3 interactive features",
@@ -815,7 +853,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 67, topic: "Recommender Systems Architecture", tags: ["dl", "sysdesign"], hrs: "2.5",
+        n: 70, topic: "Recommender Systems Architecture", tags: ["dl", "sysdesign"], hrs: "2.5",
         tasks: [
           "Study collaborative filtering (matrix factorization) and content-based filtering",
           "Read Google's two-tower model paper — understand how it scales to billions of items",
@@ -827,7 +865,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 68, topic: "Project: Testing + Monitoring", tags: ["project", "mlops"], hrs: "2.5",
+        n: 71, topic: "Project: Testing + Monitoring", tags: ["project", "mlops"], hrs: "2.5",
         tasks: [
           "Write integration tests for your API endpoints using pytest and httpx",
           "Add structured logging with request IDs and response times to every endpoint",
@@ -839,7 +877,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 69, topic: "Project: Deploy to Cloud", tags: ["project", "mlops"], hrs: "3",
+        n: 72, topic: "Project: Deploy to Cloud", tags: ["project", "mlops"], hrs: "3",
         tasks: [
           "Deploy your full project to Render, Railway, or HuggingFace Spaces (free tier)",
           "Set up a GitHub Actions CI/CD pipeline that auto-deploys on push to main",
@@ -851,7 +889,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 70, topic: "Week 10 Revision + README Polish", tags: ["revision", "project"], hrs: "2",
+        n: 73, topic: "Week 10 Revision + README Polish", tags: ["revision", "project"], hrs: "2",
         tasks: [
           "Record a 2-min Loom demo video walking through your project's key features",
           "Write a comprehensive README with: problem, solution, architecture, demo, local setup",
@@ -869,7 +907,7 @@ const ROADMAP = [
     phaseColor: "#34d399",
     days: [
       {
-        n: 71, topic: "ML System Design Interview Practice", tags: ["sysdesign", "revision"], hrs: "2.5",
+        n: 74, topic: "ML System Design Interview Practice", tags: ["sysdesign", "revision"], hrs: "2.5",
         tasks: [
           "Practice designing a fraud detection system: data, features, model, serving, monitoring",
           "Practice designing a content moderation system for user-uploaded images",
@@ -881,7 +919,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 72, topic: "Second Portfolio Project: Start", tags: ["project"], hrs: "2.5",
+        n: 75, topic: "Second Portfolio Project: Start", tags: ["project"], hrs: "2.5",
         tasks: [
           "Pick a smaller second project in a different domain from your first",
           "Scope it to be completable in 3–4 days — create the repo and write the spec",
@@ -892,7 +930,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 73, topic: "Coding Interview: Python Patterns", tags: ["python", "revision"], hrs: "2.5",
+        n: 76, topic: "Coding Interview: Python Patterns", tags: ["python", "revision"], hrs: "2.5",
         tasks: [
           "Solve 5 Neetcode 150 problems: 2 arrays, 2 hashmaps, 1 two-pointer",
           "Focus on time/space complexity analysis — write it in comments for each solution",
@@ -904,7 +942,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 74, topic: "Networking + Community Building", tags: ["revision"], hrs: "1.5",
+        n: 77, topic: "Networking + Community Building", tags: ["revision"], hrs: "1.5",
         tasks: [
           "Post your best project on LinkedIn with a technical writeup — use 3 relevant hashtags",
           "Join the HuggingFace Discord and introduce yourself in #introductions",
@@ -916,7 +954,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 75, topic: "Second Project: Core Build", tags: ["project"], hrs: "3",
+        n: 78, topic: "Second Project: Core Build", tags: ["project"], hrs: "3",
         tasks: [
           "Implement the model training pipeline for your second project",
           "Keep scope tight: one model, one dataset, one clear output metric",
@@ -928,7 +966,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 76, topic: "Key LLM Papers Deep Dive", tags: ["llm", "revision"], hrs: "2",
+        n: 79, topic: "Key LLM Papers Deep Dive", tags: ["llm", "revision"], hrs: "2",
         tasks: [
           "Read the InstructGPT paper summary — understand RLHF and why it matters",
           "Read Anthropic's Constitutional AI paper — understand the RLAIF approach",
@@ -940,7 +978,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 77, topic: "Full Rest Day", tags: ["revision"], hrs: "0",
+        n: 80, topic: "Full Rest Day", tags: ["revision"], hrs: "0",
         tasks: [
           "Complete rest — no coding, no papers, no videos",
           "Reflect on your 11-week journey and what surprised you most",
@@ -949,7 +987,7 @@ const ROADMAP = [
         links: []
       },
       {
-        n: 78, topic: "Second Project: Deploy + Polish", tags: ["project", "mlops"], hrs: "3",
+        n: 81, topic: "Second Project: Deploy + Polish", tags: ["project", "mlops"], hrs: "3",
         tasks: [
           "Deploy your second project publicly (HuggingFace Spaces or Render)",
           "Write a clean README with a live demo link, architecture section, and results",
@@ -961,7 +999,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 79, topic: "Behavioral Interview Prep", tags: ["revision"], hrs: "2",
+        n: 82, topic: "Behavioral Interview Prep", tags: ["revision"], hrs: "2",
         tasks: [
           "Write out 8 STAR stories covering: a tough technical decision, a failure, a collaboration",
           "Practice 3 stories out loud in front of a mirror or record yourself",
@@ -973,7 +1011,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 80, topic: "Mock Technical Interview", tags: ["revision", "sysdesign"], hrs: "2.5",
+        n: 83, topic: "Mock Technical Interview", tags: ["revision", "sysdesign"], hrs: "2.5",
         tasks: [
           "Do a 45-min mock ML coding interview on Pramp — implement a feature from scratch",
           "Do a 45-min mock ML system design with a friend or on interviewing.io",
@@ -985,7 +1023,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 81, topic: "Apply + Cold Outreach", tags: ["revision"], hrs: "2",
+        n: 84, topic: "Apply + Cold Outreach", tags: ["revision"], hrs: "2",
         tasks: [
           "Apply to 10 AI/ML Engineer roles on LinkedIn, Wellfound, and company career pages",
           "Write 3 personalized cold emails to AI engineers at companies you admire",
@@ -997,7 +1035,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 82, topic: "Deep Dive: Weakest Area", tags: ["revision"], hrs: "3",
+        n: 85, topic: "Deep Dive: Weakest Area", tags: ["revision"], hrs: "3",
         tasks: [
           "Identify your single weakest topic from your self-assessment and go deep for the full session",
           "Find 3 resources (1 video, 1 article, 1 hands-on tutorial) and work through all 3",
@@ -1009,7 +1047,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 83, topic: "Portfolio Final Polish", tags: ["revision", "project"], hrs: "2.5",
+        n: 86, topic: "Portfolio Final Polish", tags: ["revision", "project"], hrs: "2.5",
         tasks: [
           "Record walkthroughs for ALL projects and upload to YouTube (unlisted) or Loom",
           "Update your LinkedIn headline, about section, and add all projects under Featured",
@@ -1021,7 +1059,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 84, topic: "Day 84: Celebrate + Plan Next", tags: ["revision"], hrs: "1",
+        n: 87, topic: "Day 84: Celebrate + Plan Next", tags: ["revision"], hrs: "1",
         tasks: [
           "Review everything you've built: list every project, skill, and concept from all 84 days",
           "Write your 3-month plan: specialization track, open source contributions, target companies",
