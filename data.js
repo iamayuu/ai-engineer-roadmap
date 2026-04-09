@@ -16,18 +16,7 @@ const ROADMAP = [
         ]
       },
       {
-        n: 2, topic: "ML Fundamentals (5 Paradigms)", tags: ["ml"], hrs: "2",
-        tasks: [
-          "Understand the 5 primary ML aspects: supervised, unsupervised, reinforcement learning, generative AI, and agentic AI — write 1 example for each in your own words",
-          "Watch 'Machine Learning for Everybody' and capture: (1) what labels are, (2) train/val/test split, (3) overfitting intuition",
-          "Write a 10-line cheat sheet: when you'd use supervised vs unsupervised vs RL"
-        ],
-        links: [
-          { t: "Machine Learning for Everybody — Full Course", u: "https://www.youtube.com/watch?v=i_LwzRVP7bg" }
-        ]
-      },
-      {
-        n: 3, topic: "Neural Networks Intuition", tags: ["dl"], hrs: "2",
+        n: 2, topic: "Neural Networks Intuition", tags: ["dl"], hrs: "2",
         tasks: [
           "Watch 3Blue1Brown Neural Nets episodes 1–2 with pen & paper — draw your own neuron",
           "Understand weights, biases, and activation functions at a conceptual level",
@@ -36,6 +25,17 @@ const ROADMAP = [
         links: [
           { t: "3Blue1Brown: Neural Networks ep1", u: "https://youtu.be/aircAruvnKk" },
           { t: "3Blue1Brown: Gradient Descent ep2", u: "https://youtu.be/IHZwWFHWa-w" }
+        ]
+      },
+      {
+        n: 3, topic: "ML Fundamentals (5 Paradigms)", tags: ["ml"], hrs: "2",
+        tasks: [
+          "Understand the 5 primary ML aspects: supervised, unsupervised, reinforcement learning, generative AI, and agentic AI — write 1 example for each in your own words",
+          "Watch 'Machine Learning for Everybody' and capture: (1) what labels are, (2) train/val/test split, (3) overfitting intuition",
+          "Write a 10-line cheat sheet: when you'd use supervised vs unsupervised vs RL"
+        ],
+        links: [
+          { t: "Machine Learning for Everybody — Full Course", u: "https://www.youtube.com/watch?v=i_LwzRVP7bg" }
         ]
       },
       {
@@ -388,7 +388,7 @@ const ROADMAP = [
         tasks: [
           "Learn chunking strategies: fixed-size, sentence-based, semantic — compare retrieval quality",
           "Set up a FAISS or ChromaDB vector store and embed your documents",
-          "Build a multi-document RAG system with source attribution in every answer (overlaps with Day 40 RAG app — Day 29 focuses on retrieval quality + chunking experiments)"
+          "Build a multi-document RAG system with source attribution in every answer (overlaps with Day 43 RAG app — this day focuses on retrieval quality + chunking experiments)"
         ],
         links: [
           { t: "LangChain RAG Tutorial", u: "https://python.langchain.com/docs/use_cases/question_answering/" },
@@ -1059,9 +1059,9 @@ const ROADMAP = [
         ]
       },
       {
-        n: 87, topic: "Day 84: Celebrate + Plan Next", tags: ["revision"], hrs: "1",
+        n: 87, topic: "Day 87: Celebrate + Plan Next", tags: ["revision"], hrs: "1",
         tasks: [
-          "Review everything you've built: list every project, skill, and concept from all 84 days",
+          "Review everything you've built: list every project, skill, and concept from all 87 days",
           "Write your 3-month plan: specialization track, open source contributions, target companies",
           "Share your completed roadmap journey publicly — you earned it. 🎉"
         ],

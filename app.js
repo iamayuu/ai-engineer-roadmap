@@ -8,6 +8,7 @@ const TAG_CLASS = {
   python:    'tag-python',
   dl:        'tag-dl',
   llm:       'tag-llm',
+  ml:        'tag-ml',
   mlops:     'tag-mlops',
   cv:        'tag-cv',
   sysdesign: 'tag-sysdesign',
@@ -19,6 +20,7 @@ const TAG_LABEL = {
   python:    '🐍 Python',
   dl:        '🧠 Deep Learning',
   llm:       '💬 LLMs',
+  ml:        '📈 ML',
   mlops:     '⚙️ MLOps',
   cv:        '👁️ CV',
   sysdesign: '🏗️ System Design',
@@ -35,6 +37,14 @@ function getTotalTasks() {
   let total = 0;
   ROADMAP.forEach(phase => {
     phase.days.forEach(day => { total += day.tasks.length; });
+  });
+  return total;
+}
+
+function getTotalDays() {
+  let total = 0;
+  ROADMAP.forEach(phase => {
+    total += phase.days.length;
   });
   return total;
 }
@@ -186,7 +196,7 @@ function updateProgress() {
   const pct = totalTasks === 0 ? 0 : ((doneTasks / totalTasks) * 100);
 
   // Day counts still shown as "days left"
-  const totalDays = 84;
+  const totalDays = getTotalDays();
   const doneDays = countDoneDays();
 
   document.getElementById('doneCount').textContent = doneTasks;
