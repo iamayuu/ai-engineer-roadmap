@@ -12,21 +12,37 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="bg-grid"></div>
+  <body class="mode-ai" id="appBody">
+    <div class="bg-grid" id="bgGrid"></div>
     <div class="noise-overlay"></div>
 
     <header class="site-header">
       <div class="header-inner">
         <div class="header-left">
           <div class="logo-mark">
-            <span class="logo-icon">⬡</span>
-            <span class="logo-text">AI Roadmap for Ayuu</span>
+            <span class="logo-icon" id="logoIcon">⬡</span>
+            <div class="logo-stack">
+              <span class="logo-text" id="logoTitle">AI Roadmap for Ayuu</span>
+              <span class="logo-sub" id="logoSub">12-week engineering track</span>
+            </div>
           </div>
-          <div class="header-meta">
+          <div class="roadmap-switch" role="group" aria-label="Choose roadmap">
+            <button type="button" class="switch-opt switch-opt--ai is-active" id="switchAi" onclick="setRoadmapMode('ai')">
+              <span class="switch-opt-label">AI</span>
+            </button>
+            <button type="button" class="switch-opt switch-opt--dsa" id="switchDsa" onclick="setRoadmapMode('dsa')">
+              <span class="switch-opt-label">DSA</span>
+            </button>
+          </div>
+          <div class="header-meta" id="headerMetaAi">
             <span class="meta-pill">12 Weeks</span>
             <span class="meta-pill">87 Days</span>
             <span class="meta-pill">~200 Hours</span>
+          </div>
+          <div class="header-meta header-meta--hidden" id="headerMetaDsa" hidden>
+            <span class="meta-pill">300 Problems</span>
+            <span class="meta-pill">15 Topics</span>
+            <span class="meta-pill">LeetCode + GFG</span>
           </div>
         </div>
         <div class="header-right">
@@ -41,8 +57,15 @@
             </div>
           </div>
           <div class="header-stats">
-            <div class="stat-item"><span class="stat-num" id="pctDone">0%</span><span class="stat-label">Complete</span></div>
-            <div class="stat-item"><span class="stat-num" id="daysLeft">84</span><span class="stat-label">Days left</span></div>
+            <div class="stat-item">
+              <span class="stat-num" id="pctDone">0%</span><span class="stat-label">Complete</span>
+            </div>
+            <div class="stat-item stat-item--ai-only" id="statDaysWrap">
+              <span class="stat-num" id="daysLeft">84</span><span class="stat-label">Days left</span>
+            </div>
+            <div class="stat-item stat-item--dsa-only header-meta--hidden" id="statTopicsWrap" hidden>
+              <span class="stat-num" id="topicsCleared">0</span><span class="stat-label">Topics done</span>
+            </div>
           </div>
         </div>
       </div>
@@ -58,7 +81,7 @@
           <button type="button" class="sync-btn" onclick="exportProgress()" title="Copy progress JSON to clipboard">Export</button>
           <button type="button" class="sync-btn" onclick="openImportDialog()" title="Paste JSON from another device">Import</button>
         </div>
-        <div class="filter-group">
+        <div class="filter-group filter-group--ai" id="filterGroupAi">
           <button class="filter-btn active" data-filter="all" onclick="setFilter('all', this)">All</button>
           <button class="filter-btn" data-filter="python" onclick="setFilter('python', this)">🐍 Python</button>
           <button class="filter-btn" data-filter="dl" onclick="setFilter('dl', this)">🧠 Deep Learning</button>
@@ -69,37 +92,65 @@
           <button class="filter-btn" data-filter="project" onclick="setFilter('project', this)">🛠️ Project</button>
           <button class="filter-btn" data-filter="revision" onclick="setFilter('revision', this)">🔄 Revision</button>
         </div>
+        <div class="filter-group filter-group--dsa header-meta--hidden" id="filterGroupDsa" hidden>
+          <button class="filter-btn dsa-filter active" data-dsa-filter="all" onclick="setDsaFilter('all', this)">All</button>
+          <button class="filter-btn dsa-filter tag-diff--easy" data-dsa-filter="easy" onclick="setDsaFilter('easy', this)">Easy</button>
+          <button class="filter-btn dsa-filter tag-diff--medium" data-dsa-filter="medium" onclick="setDsaFilter('medium', this)">Medium</button>
+          <button class="filter-btn dsa-filter tag-diff--hard" data-dsa-filter="hard" onclick="setDsaFilter('hard', this)">Hard</button>
+        </div>
       </div>
     </div>
 
     <main class="main-content">
-      <div class="table-scroll-wrap">
-        <table class="roadmap-table" id="roadmapTable">
-          <thead>
-            <tr>
-              <th class="col-check"></th>
-              <th class="col-day">Day</th>
-              <th class="col-topic">Topic</th>
-              <th class="col-tasks">Tasks</th>
-              <th class="col-tags">Tags</th>
-              <th class="col-resources">Resources</th>
-              <th class="col-hrs">Hrs</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
+      <div class="roadmap-panels">
+        <div class="roadmap-panel roadmap-panel--ai is-active" id="panelAi">
+          <div class="table-scroll-wrap">
+            <table class="roadmap-table" id="roadmapTableAi">
+              <thead>
+                <tr>
+                  <th class="col-check"></th>
+                  <th class="col-day">Day</th>
+                  <th class="col-topic">Topic</th>
+                  <th class="col-tasks">Tasks</th>
+                  <th class="col-tags">Tags</th>
+                  <th class="col-resources">Resources</th>
+                  <th class="col-hrs">Hrs</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyAi"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="roadmap-panel roadmap-panel--dsa" id="panelDsa">
+          <div class="table-scroll-wrap table-scroll-wrap--dsa">
+            <table class="roadmap-table roadmap-table--dsa" id="roadmapTableDsa">
+              <thead>
+                <tr>
+                  <th class="col-serial">#</th>
+                  <th class="col-check"></th>
+                  <th class="col-problem">Problem</th>
+                  <th class="col-diff">Difficulty</th>
+                  <th class="col-link">Link</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyDsa"></tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
 
     <footer class="site-footer">
-      <p>Built for focus. Track daily, ship weekly. <span id="footerDate"></span></p>
+      <p id="footerLine">Built for focus. Track daily, ship weekly. <span id="footerDate"></span></p>
     </footer>
 
     <dialog id="importDialog" class="import-dialog">
       <form method="dialog" class="import-dialog-form" onsubmit="return false;">
         <h2 class="import-dialog-title">Import progress</h2>
-        <p class="import-dialog-hint">Paste JSON from <strong>Export</strong> on another device. This replaces progress in this browser.</p>
-        <textarea id="importTextarea" class="import-textarea" rows="10" placeholder='{"version":2,"doneTasks":["1:0","1:1"],...}' spellcheck="false"></textarea>
+        <p class="import-dialog-hint">
+          Paste JSON from <strong>Export</strong>. Version 3 saves <strong>both</strong> AI and DSA completion in one file.
+        </p>
+        <textarea id="importTextarea" class="import-textarea" rows="10" placeholder='{"version":3,"ai":{"doneTasks":[]},"dsa":{"doneTasks":[]}}' spellcheck="false"></textarea>
         <p id="importError" class="import-error" hidden></p>
         <div class="import-dialog-actions">
           <button type="button" class="sync-btn sync-btn--ghost" onclick="closeImportDialog()">Cancel</button>
@@ -111,6 +162,7 @@
     <div id="syncToast" class="sync-toast" role="status" aria-live="polite" hidden></div>
 
     <script src="data.js"></script>
+    <script src="dsa-data.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
