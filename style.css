@@ -314,6 +314,24 @@ body {
   flex-wrap: wrap;
 }
 
+/* Ensure [hidden] always hides elements regardless of CSS specificity */
+[hidden] {
+  display: none !important;
+}
+
+/* Mode-based visibility for header meta and filter groups */
+.mode-ai #headerMetaDsa,
+.mode-ai #filterGroupDsa,
+.mode-ai #statTopicsWrap {
+  display: none !important;
+}
+
+.mode-dsa #headerMetaAi,
+.mode-dsa #filterGroupAi,
+.mode-dsa #statDaysWrap {
+  display: none !important;
+}
+
 .filter-btn {
   font-family: var(--font-body);
   font-size: 13px;
@@ -612,6 +630,11 @@ body {
 }
 
 .day-row.hidden {
+  display: none;
+}
+
+.dsa-row.hidden,
+.dsa-topic-row.hidden {
   display: none;
 }
 
